@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* Risk Free Section */
+
+.risk-free-section {
+    background: linear-gradient(180deg, var(--color-bg-contrast-light-green), var(--color-bg-contrast-dark-green));
+    padding: 3rem 1.5rem;
+}
+
+.risk-free-container {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.risk-free-badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-text-dark-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+
+.risk-free-title {
+    font-size: 1.75rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+}
+
+.risk-free-text {
+    font-size: 1rem;
+    color: var(--color-text-secondary-dark);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.risk-free-text strong {
+    color: var(--color-text-dark-primary);
+}
+
+.risk-free-note {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: var(--color-primary-dark);
+    font-style: italic;
+}

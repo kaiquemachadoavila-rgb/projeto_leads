@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Seção de prova social */
+
+.social-proof {
+    background: linear-gradient(180deg, var(--color-bg-contrast-dark) 0%, var(--color-bg-contrast-light) 100%);
+    padding: 4rem 1.5rem;
+}
+
+.social-proof-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-proof-header h2 {
+    font-size: 2rem;
+    color: var(--color-text-dark-primary);
+    margin-bottom: 0.5rem;
+}
+
+.social-proof-header p {
+    color: var(--color-text-secondary);
+    max-width: 520px;
+    margin: 0 auto 3rem;
+}
+
+.social-proof-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.social-proof-logos img {
+    max-width: 100%;
+    opacity: 0.7;
+    box-shadow: 0px 0px 2.4px 0.8px rgba(0, 0, 0, 0.334);
+    transition: opacity 0.3s ease;
+}
+
+.social-proof-logos img:hover {
+    opacity: 1;
+}
+
+.social-proof-numbers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.number-card {
+    background-color: var(--color-primary-light);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+}
+
+.number-card strong {
+    display: block;
+    font-size: 1.75rem;
+    color: var(--color-primary-dark);
+}
+
+.number-card span {
+    color: var(--color-text-dark-primary);
+    font-size: 0.95rem;
+}
+
+.social-proof-testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.social-proof-testimonials blockquote {
+    background-color: var(--color-background);
+    padding: 2rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    color: var(--color-text-dark-primary);
+}
+
+.social-proof-testimonials p {
+    margin-bottom: 1rem;
+}
+
+.social-proof-testimonials footer {
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+}
+
+.social-proof-paragraph>p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 3rem;
+    background-color: var(--color-background);
+}

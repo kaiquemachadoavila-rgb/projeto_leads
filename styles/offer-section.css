@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Offer Section */
+
+.offer-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: linear-gradient(180deg, var(--color-bg-contrast-dark) 0%, var(--color-bg-contrast-light) 100%);
+    padding: 5rem 3rem;
+}
+
+.offer-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3rem;
+}
+
+.offer-presentation>h2 {
+    font-size: 2.8rem;
+    color: var(--color-primary-dark);
+}
+
+.offer-presentation>p {
+    font-size: 1.2rem;
+}
+
+.offer-benefits {
+    text-align: right;
+}
+
+.offer-benefits>h2 {
+    font-size: 2.8rem;
+    color: var(--color-text-primary-dark);
+}
+
+.offer-benefits>p {
+    text-decoration: none;
+    padding: 5px;
+    border-right: 3px solid var(--color-primary-dark);
+}
+
+.offer-section>span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 3rem;
+    color: var(--color-primary-dark);
+}
+
+.offer-section > a {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-light-primary);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.158);
+}

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* Soluction Section */
+
+.solution {
+    padding: 5rem 3rem;
+    background: linear-gradient(180deg, var(--color-bg-contrast-light-green) 0%, var(--color-bg-contrast-dark-green) 100%);
+}
+
+.solution-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.solution-header h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: var(--color-text-dark-primary);
+}
+
+.solution-header p {
+    max-width: 640px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    color: var(--color-text-secondary-dark);
+    line-height: 1.6;
+}
+
+.solution-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 4.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.solution-step {
+    background-color: var(--color-background);
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.solution-step img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.15rem;
+}
+
+.solution-step h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--color-text-dark-primary);
+}
+
+.solution-step p {
+    font-size: 14px;
+    color: var(--color-text-secondary-dark);
+    line-height: 1.5;
+}
+
+.solution-cta {
+    margin-top: 20px;
+}
+
+.solution-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-accent);
+    color: var(--color-text-dark-primary);
+    font-size: 1.20rem;
+    font-weight: 500;
+    border-radius: 999px;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.436);
+    animation: pulse 1.5s infinite;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.solution-button:hover {
+    background-color: color-mix(in srgb, var(--color-accent), black 4%);
+    transform: translateY(-2px);
+}

@@ -13,30 +13,43 @@
 :root {
     /* ===== Principal ===== */
     --color-primary-dark: #1c5f20;
-    --color-primary-light: #aee1b0;
+    --color-primary-light: #b8ecba;
 
     /* ===== Neutras ===== */
-    --color-neutral-medium: #b0bec5;
+    --color-neutral-medium: #9daab0;
     /* Textos secundários, ícones */
     --color-background: #ffffff;
     /* Fundo principal */
-    --color-bg-contrast: #f8fafc;
+    --color-bg-contrast: #fcfcfc;
     /*  Fundo para criar algum contraste com o branco */
 
     /* ===== Destaque ===== */
-    --color-accent: #ffeb3b;
+    --color-accent: #ffec3d;
     /* CTAs, badges, elementos que chamam atenção */
 
     /* ===== Textos ===== */
     --color-text-dark-primary: #212121;
     --color-text-light-primary: #ffffff;
     /* Texto principal */
-    --color-text-secondary: #678363;
-    /* Texto secundário */
+    --color-text-secondary-green: #7e9f7a;
+    /* Texto secundário verde */
+    --color-text-secondary-light: rgb(245, 245, 245);
+    /* Text secundário cinza claro */
+    --color-text-secondary-dark: rgb(105, 105, 105);
+    /* Text secundário cinza escuro */
+
 
     /* === Gradientes === */
-    --color-hero-v1: #1c5f20;
+    --color-hero-v1: #226f27;
     --color-hero-v2: #29882f;
+    /* Gradiente para hero */
+    --color-bg-contrast-dark: #f1f1f1;
+    --color-bg-contrast-light: #fcfcfc;
+    /* Gradiente de fundo contrastado */
+    --color-bg-contrast-dark-green: #e6f5e7;
+    --color-bg-contrast-light-green: #f9fff9;
+    /* Gradiente de fundo contrastado verde */
+
 }
 
 
@@ -48,244 +61,22 @@ body {
     background: var(--color-background);
 }
 
-p, h1, h2, h3, h4, h5 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin-bottom: 20px;
 }
 
-button.cta-button {
+.cta-button {
+    text-decoration: none;
     border: none;
     padding: 15px 30px;
-    font-size: 1.15rem;
+    font-size: 1.20rem;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 1px black;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.436);
     background-color: var(--color-accent);
     animation: pulse 1.5s infinite;
-}
-
-/* Hero */
-
-div.hero {
-    width: 100%;
-    height: 30rem;
-    background: linear-gradient(to top, var(--color-hero-v1), var(--color-hero-v2));
-    overflow: hidden;
-}
-
-div.shadow-bottom {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #00000000, rgba(0, 0, 0, 0.813));
-}
-
-div.hero-content {
-    margin: auto;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-div.hero-text {
-    color: var(--color-text-light-primary);
-    max-width: 45%;
-}
-
-.empresa-hero {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9rem;
-    font-weight: 700;
-    margin-bottom: 1.9rem;
-}
-
-.empresa-hero > span {
-    font-size: 1.1rem;
-    border-left: 2px solid red;
-}
-
-.headline-hero {
-    font-size: 2.1rem;
-    font-weight: 900;
-    line-height: 3rem;
-}
-
-.subheadline-hero {
-    color: var(--color-text-secondary);
-    font-size: 1.2rem;
-}
-
-div.hero-img {
-    width: 45%;
-    height: 100%;
-    background: url(../assets/business-hero.png) bottom no-repeat;
-    background-size: contain;
-}
-
-/* Keyframes - hero */
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.01);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Benefícios seção */
-
-.benefits-section {
-    padding: 4rem 1.5rem;
-    background-color: #f8fafc;
-}
-
-.benefits-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.benefits-header {
-    max-width: 650px;
-    margin: auto;
-    margin-bottom: 3rem;
-}
-
-.benefits-title {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 1.3;
-    font-weight: 600;
-    color: #0f172a;
-    margin-bottom: 1rem;
-}
-
-.benefits-subtitle {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #475569;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-}
-
-.benefit-card {
-    text-align: center;
-    background-color: var(--color-primary-light);
-    padding: 1.75rem;
-    border-radius: 12px;
-    box-shadow: 0px 0px 7px 2.5px rgba(0, 0, 0, 0.111);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    z-index: 1;
-}
-
-.benefit-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
-}
-
-.benefit-title {
-    font-size: 1.400rem;
-    font-weight: 600;
-    color: #0f172a;
-    margin-bottom: 0.5rem;
-}
-
-.benefit-text {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #475569;
-}
-
-/* Prova social e Cta */
-
-.social-proof-section > p {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    padding-top: 3rem;
-}
-
-.cta-form {
-    width: 100%;
-    padding: 3rem;
-    text-align: center;
-}
-
-/* Faq Section */
-
-.faq-sectio {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    background: var(--color-bg-contrast);
-}
-
-.faq-container {
-    max-width: 800px;
-    padding: 2rem;
-}
-
-.faq-item {
-    background-color: var(--color-background);
-    padding: 0.5rem;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px  5px 1.5px rgba(0, 0, 0, 0.297);
-}
-
-.faq-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 0.5rem 0;
-}
-
-.faq-header span {
-    color: var(--color-primary-dark);
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.fa-solid .fa-chevron-down {
-    color: var(--color-primary-dark);
-}
-
-.faq-body {
-    color: var(--color-text-secondary);
-    font-size: 0.9rem;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity .2s;
-}
-
-.faq-body.active {
-    height: 100%;
-    opacity: 1;
-    padding:  0px 0.5rem;
-}
-
-.arrow {
-    transition: transform .2s linear;
-}
-
-.faq-item:has(.active) .arrow {
-    transform: rotate(180deg);
 }
