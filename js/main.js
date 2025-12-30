@@ -1,6 +1,6 @@
 /* Paragráfo de feedback de envio do formulário */
 const feedback = document.getElementById("cta-feedback");
-/* Botão submit */
+
 
 /* Faq */
 
@@ -16,6 +16,7 @@ faqItens.forEach(faqItem => {
 /* Form */
 
 const form = document.getElementById("cta-form");
+/* Botão submit */
 const submitButton = form.querySelector("button[type='submit']")
 
 form.addEventListener("submit", async function (event) {
@@ -25,15 +26,17 @@ form.addEventListener("submit", async function (event) {
     submitButton.textContent = "Enviando...";
 
     const name = document.getElementById("name-cta-form").value;
+    const lastName = document.getElementById("last-name-cta-form").value;
     const email = document.getElementById("email-cta-form").value;
 
     /* Objeto pronto para enviar */
     const payload = {
+    last_name: lastName,
     name: name,
     email: email
   }
 
-    const response = await fetch("https://lead-capture-salesforce.instatunnel.my/webhook/form-lead-salesforce", {
+    const response = await fetch("https://lead.machadodevweb.icu/webhook/form-lead-salesforce", {
         method: "POST", 
         headers: {
             "Content-Type": "application/json" 
@@ -50,7 +53,7 @@ form.addEventListener("submit", async function (event) {
         submitButton.disabled = false;
         submitButton.textContent = "Solicite agora sua análise gratuita";
     } else {
-        feedback.textContent = data.mensage || "Erro ao enviar. Tente novamente.";
+        feedback.textContent = data.message || "Erro ao enviar. Tente novamente.";
         feedback.style.display = "block";
         feedback.style.color = "red";
         submitButton.disabled = false;
