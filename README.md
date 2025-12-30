@@ -61,13 +61,13 @@ Essa solução eliminou a necessidade de autenticação via OAuth e atendeu comp
 
 ### 1️⃣ Visão Geral do Fluxo
 
-![Fluxo geral da integração](./assets/fluxo-geral.png)
+![Fluxo geral da integração](./assets/fluxo-projetos/fluxo-geral.pdf)
 
 ---
 
 ### 2️⃣ Envio do Formulário pela Landing Page
 
-![Landing page enviando dados para o n8n](./assets/fluxo-projetos/fluxo-geral.pdf)
+![Landing page enviando dados para o n8n](./assets/fluxo-projetos/landing-page-form.png.png)
 
 ---
 
