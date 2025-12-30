@@ -61,7 +61,7 @@ Essa solução eliminou a necessidade de autenticação via OAuth e atendeu comp
 
 ### 1️⃣ Visão Geral do Fluxo
 
-![Fluxo geral da integração](./assets/fluxo-projetos/fluxo-geral.pdf)
+![Fluxo geral da integração](./assets/fluxo-projetos/fluxo-geral.gif)
 
 ---
 
